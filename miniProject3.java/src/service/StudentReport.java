@@ -26,9 +26,9 @@ public class StudentReport {
         return grade;
     }
 
-    public String validate(Student s) throws NullnameException, NullMarksArrayException, NullStudentobjectException {
-        if (s == null) throw new NullStudentobjectException();
-        if (s.getName() == null) throw new NullnameException();
+    public String validate(Student s) throws NullNameException, NullMarksArrayException, NullStudentObjectException {
+        if (s == null) throw new NullStudentObjectException();
+        if (s.getName() == null) throw new NullNameException();
         if (s.getMarks() == null) throw new NullMarksArrayException();
         return "VALID";
     }

@@ -1,5 +1,14 @@
 package exception;
 
-public class NullMarksArrayException {
-
+public class NullMarksArrayException extends Exception{
+  /**
+	 * 
+	 */
+//	private static final long serialVersionUID = 1L;
+  public NullMarksArrayException () {
+	  super("NullMarksArrayException occurred");
+  }
+	public String toString() {
+		return "marks arry is null";
+	}
 }
